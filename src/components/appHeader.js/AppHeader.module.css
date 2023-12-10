@@ -23,3 +23,22 @@
         gap: 24px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .header__icons {
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 771px) {
+    .header__icons {
+
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header__logo {
+        width: 180px;
+    }
+}
