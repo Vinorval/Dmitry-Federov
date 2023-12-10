@@ -1,0 +1,23 @@
+.navigation {
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1440px) {
+    .navigation {
+        width: 45%;
+    }
+}
+
+.navigation__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation__text_type_active {
+    text-decoration: underline 3px #EAD6BD;
+}
