@@ -1,14 +1,17 @@
 import './App.css';
-import { Router, Route } from 'react-router';
+import { Routes, Route } from 'react-router';
+import AppHeader from '../appHeader.js/AppHeader';
 
 import NotFoundPage from '../../page/NotFoundPage';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Route path='*' element={<NotFoundPage />} />
-      </Router>
+      <AppHeader />
+      <Routes>
+        <Route path="/master" element={<NotFoundPage />} />
+        <Route path='/' element={<NotFoundPage />} />
+      </Routes>
     </div>
   );
 }
