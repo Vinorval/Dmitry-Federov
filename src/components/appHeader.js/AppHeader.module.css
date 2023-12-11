@@ -1,5 +1,6 @@
 .header {
-    margin: 34px auto 0;
+    padding-top: 34px;
+    margin: auto;
     height: 50px;
     width: 92%;
     display: flex;

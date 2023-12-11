@@ -2,7 +2,7 @@ import Styles from "./Navigation.module.css";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = ({ burger }) => {
     const arrLinks = [ { name: "Мастер", to: "/master" }, { name: "Каталог", to: "/catalog" }, { name: "LIVE", to: "/live" }, { name: "Контакты", to: "/contacts" } ];
     const returnLink = (link, key) => (
         <NavLink to={link.to} className={({ isActive }) => [
@@ -12,7 +12,7 @@ const Navigation = () => {
     )
 
     return (
-        <nav className={Styles.navigation}>
+        <nav className={`${Styles.navigation} ${burger && Styles.navigation_type_burger}`}>
             {arrLinks.map((link, index) => returnLink(link, index))}
         </nav>
     )

@@ -10,6 +10,11 @@
     }
 }
 
+.navigation_type_burger {
+    display: grid;
+    gap: 40px;
+}
+
 .navigation__text {
     font-weight: 600;
     font-size: 14px;
