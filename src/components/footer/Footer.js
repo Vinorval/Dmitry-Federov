@@ -13,7 +13,7 @@ const Footer = () => {
 
     return (
         <footer className={Styles.footer} >
-            <Navigation burger={true} />
+            <Navigation burger={true} className={Styles.footer__navigation} />
             <ul className={Styles.info} >{arrInfo.map((item, index) => createInfoItem(item, index))}</ul>
             <div className={Styles.contact} >
                 <p className={Styles.contact__phone} >+7 (999) 808 65 48</p>
